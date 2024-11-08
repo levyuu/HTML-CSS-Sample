@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>My Portfolio</title>
+          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="mediaqueries.css" />
+     </head>
+     <body>
+          <nav id="desktop-nav">
+               <div class="logo">
+                    <img src="./assets/logo.png" alt="Zyra Logo">
+               </div>
+               <div>
+                    <ul class="nav-links">
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#preferences">Preferences</a></li>
+                         <li><a href="#hobbies">Hobbies</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         <li><a href="#comment">Comment</a></li>
+                    </ul>
+               </div>
+               </nav>
+          <nav id="hamburger-nav">
+               <div class="logo">
+                    <img src="./assets/logo.png" alt="Zyra Logo">
+               </div>
+               <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                    </div>
+                    <div class="menu-links">
+                         <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                         <li><a href="#preferences" onclick="toggleMenu()">Preferences</a></li>
+                         <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                         <li><a href="#comment" onclick="toggleMenu()">Comment</a></li>
+                    </div>
+               </div>
+               </nav>
+          <!-- PROFILE -->
+          <section id="profile">
+               <div class="section__pic-container">
+                    <img src="./assets/zyra2.png" alt="Zyra Lansigan profile picture"/>
+               </div>
+               <div class="section__text">
+                    <p class="section__text__p1">Hello! I'm</p>
+                    <h1 class="title">Zyra Lansigan</h1>
+                    <p class="section__text__p2">a third-year CS student.</p>
+                    <div class="btn-container">
+                         <button class="btn btn-color-2" onclick="window.open('./assets/resume-sample.pdf')">Download CV</button>
+                         <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                    </div>
+                    <div id="socials-container"></div>
+                         <a href="https://www.facebook.com/zyra.lansigan" target="_blank"> <img src="./assets/facebook-icon.png" alt="My Facebook Profile" class="icon" /></a>
+                         <a href="https://x.com/zyrababo" target="_blank"> <img src="./assets/twitter (1).png" alt="My Twitter Profile" class="icon" /> </a>
+                         <a href="https://www.instagram.com/zyraries/" target="_blank"> <img src="./assets/instagram-icon.png" alt="My Instagram Profile" class="icon" /> </a>
+                         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"> <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" /> </a>
+               </div>
+          </section>
+          <!-- ABOUT -->
+          <section id="about">
+                    <p class="section__text__p1">Get To Know More</p>
+                    <h1 class="title">About Me</h1>
+                    <div class="section-container">
+                         <div class="section__pic-container">
+                              <img src="./assets/about-image.png" alt="Profile Picture" class="about-pic">
+                         </div>
+                         <div class="about-details-container">
+                         <div class="about-container">
+                              <div class="details-container">
+                                   <img src="./assets/birthday-cake1.png" alt="Birthday Icon" class="icon"/>
+                                   <h3>Birthdate</h3>
+                                   <p>20 yrs. old <br> April 18, 2004</p>
+                              </div>
+                              <div class="details-container">
+                                   <img src="./assets/location.png" alt="Location Icon" class="icon"/>
+                                   <h3>Address</h3>
+                                   <p>Payatas, <br> Quezon City</p>
+                              </div>
+                              <div class="details-container">
+                                   <img src="./assets/graduation-hat.png" alt="SHS Icon" class="icon"/>
+                                   <h3>Senior High School</h3>
+                                   <p>STEM <br> Technological Institute of the Philippines</p>
+                              </div>
+                              <div class="details-container">
+                                   <img src="./assets/reading-book.png" alt="College Icon" class="icon"/>
+                                   <h3>College</h3>
+                                   <p>BS Computer Science <br> Technological University of the Philippines</p>
+                              </div>
+                         </div>
+                         <div class="text-container">
+                              <p>I’m an introvert with a loud mouth and a somewhat funny personality once you get to know me or once our humor clicks. My MBTI is INFP, and my zodiac sign is Aries, a fire sign. As much as I don’t want these things to represent who I am, because I don’t want to be put in a box based on them, I also recognize that they are part of me, and sometimes they offer a glimpse into how I interact with the world.</p>
+                         </div>
+                    </div>
+               </div>
+               <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#preferences'"/>
+          </section>
+          <!-- PREFERENCES -->
+          <section id="preferences">
+               <p class="section__text__p1">Explore My</p>
+               <h1 class="title">Preferences</h1>
+               <div class="preferences-details-container">
+                    <div class="about-container">
+                    <!-- FAVORITES SECTION -->
+                    <div class="details-container">
+                         <h2 class="preferences-sub-title">Favorites</h2>
+                         <p class="italic-sentence">"Things that define my personality."</p>
+                         <div class="article-container">
+                         <article>
+                         <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                         <div>
+                              <h3>Color</h3>
+                              <p>Sky Blue</p>
+                         </div>
+                         </article>
+                              <!-- 2 SECOND FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                             <h3>Place</h3>
+                                             <p>Parks</p>
+                                        </div>
+                                   </article>
+                              <!-- 3 THIRD FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                             <h3>Movie Genre</h3>
+                                             <p>Dystopian</p>
+                                        </div>
+                                   </article>
+                              <!-- 4 FOURTH FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                             <h3>Music Genre</h3>
+                                             <p>Pop</p>
+                                        </div>
+                                   </article>
+                              <!-- 5 FIFTH FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                             <h3>Sport</h3>
+                                             <p>Badminton</p>
+                                        </div>
+                                   </article>
+                              <!-- 6 SIXTH FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                             <h3>Quote</h3>
+                                             <p>"Do it scared."</p>
+                                        </div>
+                                   </article>
+                              <!-- 7 SEVENTH FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                        <h3>Artist</h3>
+                                        <p>
+                                             <a href="https://www.youtube.com/watch?v=ekr2nIex040" target="_blank">Rosé</a>
+                                        </p>
+                                        </div>
+                                   </article>
+                              <!-- 8 EIGHTH FAV -->
+                                   <article>
+                                        <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                        <div>
+                                             <h3>Pet</h3>
+                                             <p>Cat</p>
+                                        </div>
+                                   </article>
+                              <!-- 9 SEVENTH FAV -->
+                              <article>
+                                   <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                   <div>
+                                        <h3>Song</h3>
+                                        <p>
+                                             <a href="https://youtu.be/TtqAUOxwh-k?si=BGiy6AtzNCED2pMC" target="_blank">"With a Smile"</a>
+                                        </p>
+                                   </div>
+                              </article>
+                              <!-- 10 EIGHTH FAV -->
+                              <article>
+                                   <img src="./assets/heart (1).png" alt="Favorite Icon" class="icon">
+                                   <div>
+                                        <h3>Game App.</h3>
+                                        <p>Gardenscape</p>
+                                   </div>
+                              </article>
+                         </div>
+                         </div>
+                         <!-- ASPIRATIONS -->
+                         <div class="details-container">
+                              <h2 class="preferences-sub-title">Aspirations</h2>
+                              <p class="italic-sentence">"Goals I aim to achieve."</p>
+                              <div class="article-container">
+                                   <article>
+                                   <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                   <div>
+                                        <h3>Short-term Goal</h3>
+                                        <p>Graduate</p>
+                                   </div>
+                                   </article>
+                              <!-- 2 SECOND ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Long-term Goal</h3>
+                                             <p>Be financially stable.</p>
+                                        </div>
+                                   </article>
+                              <!-- 3 THIRD ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Country</h3>
+                                             <p>Switzerland</p>
+                                        </div>
+                                   </article>
+                              <!-- 4 FOURTH ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Job/Work</h3>
+                                             <p>Something that's not exhausting.</p>
+                                        </div>
+                                   </article>
+                              <!-- 5 FIFTH ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Skill</h3>
+                                             <p>Improve public speaking skills.</p>
+                                        </div>
+                                   </article>
+                              <!-- 6 SIXTH ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Relationship</h3>
+                                             <p>Build bonds with family and friends.</p>
+                                        </div>
+                                   </article>
+                              <!-- 7 SEVENTH ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Health & Wellness</h3>
+                                             <p>Be physically fit.</p>
+                                        </div>
+                                   </article>
+                              <!-- 8 EIGHTH ASP -->
+                                   <article>
+                                        <img src="./assets/star-inside-circle.png" alt="Aspirations Icon" class="icon">
+                                        <div>
+                                             <h3>Adventure</h3>
+                                             <p>Bungee jump at Macau Tower; swing at Nevis.</p>
+                                        </div>
+                                   </article>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+                    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#hobbies'"/>
+          </section>
+          <!-- HOBBIES -->
+          <section id="hobbies">
+               <p class="section__text__p1">Check Out My</p>
+               <h1 class="title">Hobbies</h1>
+               <div class="preferences-details-container">
+                    <div class="about-container">
+                    <div class="details-container color-container">
+                         <div class="article-container">
+                              <img src="./assets/hobbies1.png" alt="Listening to Music" class="hobbies-img">
+                         </div>
+                         <h2 class="preferences-sub-title hobbies-title">Listening to Music</h2>
+                         <p class="italic-sentence">Here’s some of my Spotify playlist—hope you enjoy it!</p>
+                         <div class="btn-container">
+                              <button class="btn btn-color-2 hobbies-btn" onclick="window.open('https://open.spotify.com/playlist/7KZBz3S6Md0eu81JEYll96', '_blank')">
+                                   b-byahe
+                              </button>
+                              <button class="btn btn-color-2 hobbies-btn" onclick="window.open('https://open.spotify.com/playlist/4aogp0WOeZw3rQmiNKwih5', '_blank')">
+                                   maliligo
+                              </button>
+                              <button class="btn btn-color-2 hobbies-btn" onclick="window.open('https://open.spotify.com/playlist/0KxSkTKfd0YhUeveij8GN0', '_blank')">
+                                   K-Pop
+                              </button>
+                         </div>
+                         </div>
+                         <div class="details-container color-container">
+                              <div class="article-container">
+                                   <img src="./assets/hobbies2.png" alt="Reading Comics" class="hobbies-img">
+                              </div>
+                              <h2 class="preferences-sub-title hobbies-title">Reading Comics & Novels</h2>
+                              <p class="italic-sentence">Here are some websites I read on. Enjoy exploring!</p>
+                              <div class="btn-container">
+                                   <button class="btn btn-color-2 hobbies-btn" onclick="window.open('https://www.mangago.me/', '_blank')">
+                                        comics
+                                   </button>
+                                   <button class="btn btn-color-2 hobbies-btn" onclick="window.open('https://bellereservoir.com/', '_blank')">
+                                        novels
+                                   </button>
+                              </div>
+                         </div>
+                    </div>     
+               </div>
+               <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'"/>
+          </section>
+          <!-- CONTACT -->
+          <section id="contact">
+               <p class="section__text__p1">Get in Touch</p>
+               <h1 class="title">Contact Me</h1>
+               <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                         <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon">
+                         <p><a href="mailto:zyralansigan18@gmail.com">zyralansigan18@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                         <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon">
+                         <p><a href="mailto:zyra.lansigan@tup.edu.ph">zyra.lansigan@tup.edu.ph</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                         <img src="./assets/tnt-icon.png" alt="TNT Icon" class="icon contact-icon">
+                         <p>0951 673 2319</p>
+                    </div>
+                    <div class="contact-info-container">
+                         <img src="./assets/dito-icon.png" alt="DITO Icon" class="icon contact-icon">
+                         <p>0994 057 5478</p>
+                    </div>
+               </div>
+               <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#comment'"/>
+          </section>
+          <!-- COMMENT -->
+          <section id="comment">
+               <p class="section__text__p1">Evaluate Me</p>
+               <h1 class="title">Comment</h1>
+               <div class="contact-info-upper-container">
+                    <form action="mailto:zyralansigan18@gmail.com" method="POST" enctype="text/plain">
+                         <div class="input-group">
+                              <div class="input-box">
+                                   <input type="text" name="Name " placeholder="Name ">
+                              </div>
+                              <div class="input-box">
+                                   <input type="text" name="Comment / Suggestion " placeholder="Comment / Suggestion ">
+                              </div>
+                         </div>
+                         <button type="submit" class="btn submit-btn">Submit</button>
+                    </form>
+               </div>
+          </section>
+          <!-- FOOTER -->
+          <footer>
+               <nav>
+                    <div class="nav-links-container">
+                    <ul class="nav-links">
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#preferences">Preferences</a></li>
+                         <li><a href="#hobbies">Hobbies</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         <li><a href="#comment">Comment</a></li>
+                    </ul>
+                    </div>
+               </nav>
+               <p>Copyright &#169; 2024 Zyra Lansigan. All Rights Reserved.</p>
+          </footer>
+          <script src="script.js"></script>     
+     </body>
+</html>
+
+

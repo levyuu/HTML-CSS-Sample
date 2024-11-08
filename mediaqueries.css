@@ -1,0 +1,244 @@
+/* MEDIA QUERIES */
+
+/*   1400px    */
+@media (max-width: 1400px) {
+     #profile {
+          height: 83vh;
+          margin-bottom: 6rem;
+     }
+
+     .about-containers {
+          flex-wrap: wrap;
+     }
+
+     #contact, #hobbies {
+          height: fit-content;
+     }
+
+     #hobbies {
+          margin-top: 4rem;
+     }
+}
+
+ /*  1200px   */
+@media (max-width: 1200px) {
+     #desktop-nav {
+          display: none;
+     }
+
+     #hamburger-nav {
+          display: flex;
+     }
+
+     #preferences, .preferences-details-container {
+          margin-top: 2rem;
+     }
+
+     #profile, .section-container {
+          display: block;
+     }
+
+     .arrow {
+          display: none;
+     }
+
+     section, .section-container {
+          height: fit-content;
+     }
+
+     section {
+          margin: 0 5%;
+     }
+
+     .section__pic-container {
+          width: 275px;
+          height: 275px;
+          margin: 0 auto 2rem;
+          justify-content: center;
+          margin-top: 2rem;
+     }
+
+     .about-containers {
+          margin-top: 0;
+     }
+}
+
+ /*  1000px   */
+@media (max-width: 1000px) {
+     section {
+          padding-top: 2vh;
+          margin: 0 1rem;
+     }
+
+     .nav-links {
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          font-size: 1.25rem;
+     }
+
+     .section__pic-container {
+          width: 220px;
+          height: 220px;
+     }
+
+     .about-container, .article-container {
+          grid-template-columns: 1fr;
+     }
+
+     .btn-container {
+          width: 100%;
+          align-items: center;
+     }
+
+     .title {
+          font-size: 2.5rem;
+     }
+
+     .preferences-sub-title,
+     .hobbies-title {
+          font-size: 1.5rem;
+     }
+
+     #hamburger-nav {
+          display: flex;
+     }
+
+     footer {
+          padding: 1rem;
+          width: 90%;
+     }
+
+     footer .nav-links-container {
+          width: 100%;
+     }
+
+     footer .nav-links {
+          flex-direction: column;
+          align-items: center;
+          font-size: 1rem;
+     }
+}
+
+ /*  800px    */
+@media (max-width: 800px) {
+     .section-container {
+          flex-direction: column;
+          padding: 0 1rem;
+     }
+
+     .preferences-details-container, .about-details-container {
+          align-items: center;
+     }
+
+     .hobbies-img {
+          width: 80%;
+          height: auto;
+     }
+}
+
+ /*  600px     */
+@media (max-width: 600px) {
+     body {
+          padding: 0;
+     }
+
+     footer {
+          padding: 1rem;
+     }
+
+     #contact {
+          min-height: auto;
+     }
+}
+
+ /*  400px     */
+@media (max-width: 400px) {
+     body {
+          padding: 0;
+          margin: 0;
+          justify-content: center;
+          align-items: center;
+     }
+
+     section {
+          padding-top: 2vh;
+          margin: 0;
+          width: 100%;
+          box-sizing: border-box;
+     }
+
+     .section-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 1rem;
+          padding: 0 1rem;
+     }
+
+     .section__pic-container {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          justify-content: center;
+     }
+
+     .nav-links {
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          font-size: 1rem;
+     }
+
+     footer .nav-links {
+          flex-direction: column;
+          align-items: center;
+          font-size: 1rem;
+     }
+
+     footer {
+          padding: 1rem;
+          width: 100%;
+     }
+
+     footer .nav-links-container {
+          width: 100%;
+          justify-content: center;
+     }
+
+     .btn-container {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+     }
+
+     .btn {
+          width: 100%;
+          padding: 0.75rem;
+     }
+
+     .title {
+          font-size: 2rem;
+     }
+
+     .contact-info-upper-container, .contact-info-container, #comment .contact-info-upper-container {
+          width: 90%;
+          padding: 1rem;
+          text-align: center;
+          box-sizing: border-box;
+     }
+
+     .submit-btn {
+          width: 100%;
+     }
+
+     .favorites-container, .aspiration-container {
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 1rem;
+          text-align: center;
+     }
+}

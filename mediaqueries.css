@@ -14,9 +14,9 @@
      #contact, #hobbies {
          height: fit-content;
      }
-
+ 
      .section__text__p1 {
-          margin-top: 5rem;
+         margin-top: 5rem;
      }
  }
  
@@ -123,40 +123,26 @@
  
  /* For screens 600px and smaller */
  @media (max-width: 600px) {
-     /* General adjustments */
-     body {
-         padding: 0;
-         margin: 0;
-     }
- 
-     /* Profile section */
-     #profile {
-         height: 80vh;
-         margin-bottom: 0;
-     }
- 
-     /* Container adjustments */
-     .section-container, .about-containers, .contact-info-container,
-     .favorites-container, .aspiration-container {
-         max-width: 100%;
-         margin: 0 auto;
-         padding: 1rem;
-         text-align: center;
-         box-sizing: border-box;
-     }
- 
-     /* Center and align all sections */
-     section {
-         padding: 0;
-         margin: 0 auto;
+     /* General adjustments for centering */
+     body, section, .section-container, .about-containers, .contact-info-container,
+     .favorites-container, .aspiration-container, #contact, #hobbies, #comment {
+         padding: 0 1rem;
          width: 100%;
+         margin: 0 auto;
+         box-sizing: border-box;
+         text-align: center;
      }
  
-     .section__pic-container {
-         width: 80%;
+     #profile {
          height: auto;
-         margin: 0 auto;
-         justify-content: center;
+         margin-bottom: 2rem;
+     }
+ 
+     /* Image container responsive sizing */
+     .section__pic-container {
+          width: 275px;
+          height: 275px;
+          margin: 0 auto 2rem;
      }
  
      .text-container {
@@ -164,7 +150,7 @@
          padding: 0 1rem;
      }
  
-     /* Center navbar items */
+     /* Nav alignment */
      .nav-links {
          flex-direction: column;
          gap: 0.5rem;
@@ -172,7 +158,7 @@
          font-size: 1rem;
      }
  
-     /* Button container adjustments */
+     /* Button adjustments for full width */
      .btn-container {
          width: 100%;
          align-items: center;
@@ -201,38 +187,34 @@
          gap: 0.5rem;
      }
  
-     /* Section text adjustments */
+     /* Section title adjustments */
      .section__text__p2 {
          font-size: 1.25rem;
      }
      .title {
          font-size: 2rem;
      }
- 
-     /* Contact and other container adjustments */
-     #contact, #hobbies, #comment {
-         padding: 1rem;
-         margin-top: 1.5rem;
-         box-sizing: border-box;
-         text-align: center;
-     }
  }
- 
  
  /* For screens 415px and smaller */
  @media (max-width: 415px) {
-     section, .section-container, .favorites-container, .aspiration-container {
+     /* Consistent full-width and padding for small screens */
+     section, .section-container, .favorites-container, .aspiration-container, #contact, #hobbies, #comment {
          width: 100%;
          padding: 1rem;
          margin: 0 auto;
+         box-sizing: border-box;
+         text-align: center;
      }
  
+     /* Adjusting image container */
      .section__pic-container {
          width: 150px;
          height: 150px;
          margin: 0 auto;
      }
  
+     /* Center nav links */
      .nav-links {
          flex-direction: column;
          align-items: center;
